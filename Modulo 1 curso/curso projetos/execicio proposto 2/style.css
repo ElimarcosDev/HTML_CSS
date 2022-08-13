@@ -1,0 +1,31 @@
+
+body{
+    background-color: rgb(46, 46, 46);
+    
+}
+h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+}
+div{
+    text-align: center;
+}
+div#vol{
+    text-align: left;
+}
+div#ico{
+    text-align: center;
+}
+p{
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: 15pt;
+}
+img#redo{
+    border-radius: 50%;
+}
+div#reco{
+    text-align: center;
+}
+

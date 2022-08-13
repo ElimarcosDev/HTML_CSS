@@ -1,0 +1,13 @@
+@font-face {
+    font-family:'Star jedi';
+    src: url('Fontes/Starjhol.ttf') format('truetype');
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    font-family: 'star jedi';
+    font-size: 3em;
+    font-weight: lighter;
+
+}

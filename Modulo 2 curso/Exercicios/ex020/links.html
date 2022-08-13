@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo classes</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        a{
+            color: rgb(0, 255, 149);
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+        a:visited{
+            color: rgb(0, 119, 69);
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        a:active{
+            color: rgb(0, 65, 38);
+        }
+        a::after{
+            content: '\2693';
+        }
+        div{
+            width: 25px;
+            text-align: right;
+            background-color: black;
+            padding: 4px;
+            outline: 10px;
+        }
+        div > p{
+            display: none;
+        }
+        div:hover > p{
+            display: block;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Pesonalizando links</h1>
+    <div id="um">&#128105;&#8205;&#128105;&#8205;&#128102;
+            <p>
+        <img src="https://i.ytimg.com/vi/-kHQsI32KIg/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDrLcfA1hWhQuuAYeh-yQSeJu6pmw" alt="">
+    </p>
+    </div>
+
+    <ol type="I">
+        <li><a target="_blank" href="https://www.youtube.com/channel/UC57h_ZubnkxUKn10CwsFIjQ">Canal do youtube</a></li>
+        <li><a target="_blank" href="https://www.youtube.com/watch?v=-kHQsI32KIg&t=4s">video</a></li>
+        <li><a target="_blank" href="https://twitter.com/Elimarcos_Uzuma">twitter</a></li>
+    </ol>
+
+    
+    
+</body>
+</html>
