@@ -4,17 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personalização dos fundos</title>
+    <title>posição dos fundos</title>
     <style>
-        body{
-            background-image: url('https://i.pinimg.com/originals/10/0e/40/100e40496828d3aff5f25586879cd7cd.jpg');
-            background-repeat: no-repeat;
-            color: beige;
-            font-size: 80px;
+        .bloco{
+            height: 200px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 5px;
+            background-image: url('imagens/wallpaper003.jpg');
+        }
+        #q1{
+            background-position: left top;
+        }
+        #q2{
+            background-position: left center;
+        }
+        #q3{
+            background-position: right bottom;
+        }
+        #q4{
+            background-position: center center;
         }
     </style>
 </head>
 <body>
-    <h1>Exemplo de <code>no-repeat</code></h1>
+    <div class="bloco" id="q1">
+
+    </div>
+
+    <div class="bloco" id="q2">
+        
+    </div>
+
+    <div class="bloco" id="q3">
+        
+    </div>
+
+    <div class="bloco" id="q4">
+        
+    </div>
+
+    
 </body>
 </html>
