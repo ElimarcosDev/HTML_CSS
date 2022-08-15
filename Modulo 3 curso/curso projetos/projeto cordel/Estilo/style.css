@@ -53,6 +53,9 @@ section{
     font-family: var(--fonte01);
     font-weight: bold;
 }
+section > p{
+    padding-bottom: 32px;
+}
  .normal{
     background-color: white;
     color: rgb(24, 24, 24);
@@ -60,10 +63,22 @@ section{
 .imagem{
     background-color: rgb(24, 24, 24);
     color: white;
+    text-shadow: 2px 2px 1px black;
+    box-shadow: inset 2px 2px 15px rgba(0, 0, 0, 0.382);
+    background-attachment: fixed;
 }
 .imagem > p{
     width: 200px;
     background-color: rgba(251, 239, 239, 0.082);
+}
+#img01{
+    background-image: url('../imagens/background003.jpg');
+    background-size: cover;
+}
+#img02{
+    background-image: url('../imagens/pexels-gary-barnes-6231827.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
 
