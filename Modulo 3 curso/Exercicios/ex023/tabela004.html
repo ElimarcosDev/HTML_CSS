@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial;
+        }
+        table{
+            width: 300px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            padding: 10px;
+            font-weight: bolder;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exercicio de tabelas</h1>
+    <table>
+        <caption>
+            Fimes favoritos
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Claudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big hero</td>
+            </tr>
+
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td>Intocavéis</td>
+                <td>Walle</td>
+                <td>The Batman</td>
+            </tr>
+            <tr>
+                <td>Fabricio Souza</td>
+                <td>Harry Potter</td>
+                <td>Star Wars</td>
+                <td>Senhor Dos Aneis</td>
+            </tr>
+            <tr>
+                <td>Caio Pereira</td>
+                <td>Jogos Vorazes</td>
+                <td>Star Trek</td>
+                <td>Homem aranha 2</td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</body>
+</html>

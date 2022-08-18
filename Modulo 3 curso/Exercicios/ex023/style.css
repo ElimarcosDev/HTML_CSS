@@ -1,10 +1,12 @@
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+    background-image: linear-gradient(to top white,to bottom black);
 }
 table{
     width: 500px;
     border-collapse: collapse;
+    position: relative;
+
 }
 td, th{
     border: 1px solid black;
@@ -12,9 +14,23 @@ td, th{
     padding: 10px;
 }
 thead, tfoot{
-    background-color: grey;
+    background-color: rgb(46, 46, 46);
     color: white;
 }
 .num{
     text-align: right;
+}
+caption{
+    font-size: 1.5em;
+    padding: 10px;
+    font-weight: bold;
+    background-color: rgba(169, 169, 169, 0.572);
+}
+tbody tr:nth-child(2n){
+    background-color: lightgray;
+}
+thead > tr > th{
+    position: sticky;
+    top: -1px;
+    background-color: rgb(46, 46, 46);;
 }
