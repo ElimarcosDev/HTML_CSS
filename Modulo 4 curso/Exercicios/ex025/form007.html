@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+<body>
+
+    <h1>Exemplo de formulario</h1>
+
+    <form action="cadastro.js" method="get" autocomplete="on">
+
+        <p>
+            <label for="estado">Estado</label>
+            <select selected name="estado" id="estado">
+                <option value="">----ESCOLHA----</option>
+
+                <optgroup label="Estados 1">
+                    <option value="Ba">Bahia</option>
+                    <option value="Mg">Minas Gerais</option>
+                    <option value="Sp">São paulo</option>
+                </optgroup>
+
+                <optgroup label="Estados 2">
+                    <option value="Ma">Maranhão</option>
+                    <option value="Rj">Rio de janeiro</option>
+                    <option value="Pe">Pernambuco</option>
+                </optgroup>
+
+
+            </select>
+        </p>
+
+        <p>
+            <label for="prof">Profissão</label>
+            <input type="text" name="prof" id="prof" list="listprof">
+            <datalist id="listprof">
+                <option value="Profe">Professor</option>
+                <option value="dev">Desenvolvedor</option>
+                <option value="med">Medico</option>
+                <option value="ctd">Contador</option>
+
+
+            </datalist>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+        <p>
+            <label for="msg">Mensagem</label><br>
+            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+        </p>
+
+
+    </form>
+</body>
+</html>
