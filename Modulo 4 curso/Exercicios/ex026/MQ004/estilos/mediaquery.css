@@ -3,5 +3,56 @@
 /*Todas as outras medias*/
 
 @media print {
-    
+    body{
+        background-image: url("../imagens/back-print.jpg"); /*desnecessario para impressão*/
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: black;
+        text-shadow: none;
+    }
+    #phone{
+        display: none;
+    }
+    #print{
+        display: block;
+    }
+
 }
+
+
+@media screen and (min-width: 768px) and (max-width: 992px){ /*tablet*/
+    body{
+        background-image: url("../imagens/back-tablet.jpg");
+    }
+    #phone{
+        display: none;
+    }
+    #table{
+        display: block;
+    }
+    
+
+} 
+
+@media screen and (min-width: 992px) and (max-width: 1200px){ /*pc*/
+    body{
+        background-image: url("../imagens/back-pc.jpg");
+    }
+    #phone{
+        display: none;
+    }
+    #pc{
+        display: block;
+    }
+} 
+
+@media screen and (min-width: 1200px){ /*TV*/
+    body{
+        background-image: url("../imagens/back-tv.jpg");
+    }
+    #phone{
+        display: none;
+    }
+    #tv{
+        display: block;
+    }
+} 
